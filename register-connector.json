@@ -1,0 +1,10 @@
+{
+  "name": "mongo-source",
+  "config": {
+    "connector.class": "com.mongodb.kafka.connect.MongoSourceConnector",
+    "connection.uri": "mongodb://127.0.0.1:27017",
+    "database": "e-shop",
+    "collection": "retail-orders",
+    "output.json.formatter":"com.mongodb.kafka.connect.source.json.formatter.ExtendedJson"
+  }
+}
